@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CarRental.Business.Entities;
-using CarRental.Data.Contracts.Repository_Interfaces;
+using CarRental.Data.Contracts;
 using Core.Common.Data;
 
-namespace CarRental.Data.Data_Repositories
+namespace CarRental.Data
 {
     [Export(typeof(IAccountRepository))]    // For Dependency Injection
     [PartCreationPolicy(CreationPolicy.NonShared)]  // For EF not to use the singleton pattern

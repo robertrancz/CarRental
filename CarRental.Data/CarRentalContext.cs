@@ -13,7 +13,7 @@ namespace CarRental.Data
 {
     public class CarRentalContext : DbContext
     {
-        public CarRentalContext() : base("name=CarRental")
+        public CarRentalContext() : base("CarRental")
         {
             Database.SetInitializer<CarRentalContext>(null);
         }
