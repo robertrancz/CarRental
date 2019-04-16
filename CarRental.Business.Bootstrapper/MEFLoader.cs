@@ -13,7 +13,8 @@ namespace CarRental.Business.Bootstrapper
             AggregateCatalog catalog = new AggregateCatalog();
 
             catalog.Catalogs.Add(new AssemblyCatalog(typeof(AccountRepository).Assembly));
-            
+            catalog.Catalogs.Add(new AssemblyCatalog(typeof(CarRentalEngine).Assembly));
+
             CompositionContainer container = new CompositionContainer(catalog);
 
             return container;
